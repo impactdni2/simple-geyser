@@ -1,6 +1,6 @@
 - src/lib.rs: entrypoint 
 - src/plugin.rs: main plugin code
-- to run: `cargo build && solana-test-validator -r --geyser-plugin-config config.json`
+- to run: `cargo build --release && solana-test-validator -r --geyser-plugin-config config.json`
 - note: make sure `solana-test-validator --version` matches the `Cargo.toml` version
   - sh -c "$(curl -sSfL https://release.anza.xyz/<b>v2.0.10</b>/install)" -- to install a specific version
 
