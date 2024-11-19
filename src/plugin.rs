@@ -1,5 +1,5 @@
 use agave_geyser_plugin_interface::geyser_plugin_interface::{
-    GeyserPlugin, ReplicaAccountInfoVersions, Result as PluginResult,
+    GeyserPlugin, Result as PluginResult,
 };
 
 #[derive(Debug, Default)]
@@ -15,15 +15,6 @@ impl GeyserPlugin for SimplePlugin {
     }
 
     fn on_unload(&mut self) {}
-
-    fn update_account(
-        &self,
-        _account: ReplicaAccountInfoVersions,
-        _slot: u64,
-        _is_startup: bool,
-    ) -> PluginResult<()> {
-        Ok(())
-    }
 
     fn notify_end_of_startup(&self) -> PluginResult<()> {
         Ok(())
